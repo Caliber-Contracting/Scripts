@@ -22,7 +22,7 @@ end
 
 def worker
     fin = "p"
-    log = File.open("work_log.md", "w")
+    log = File.open("work_log_#{Time.now.strftime("%d-%m-%Y_%H:%M")}.md", "w")
     puts "Welcome, we are interested in how long certain items take to finish.\n"
     puts "Please be descriptive.\n"
     puts "What is your name?\n"
